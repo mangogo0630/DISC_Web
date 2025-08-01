@@ -1,0 +1,7 @@
+.btn-discount {
+  color: $neutral-400;
+  &:hover {
+    background: $accent-200;
+    color: $white;
+  }
+}

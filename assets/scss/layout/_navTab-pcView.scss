@@ -1,0 +1,30 @@
+.nav-pills {
+  .nav-link {
+    &:hover {
+      color: $accent-300;
+    }
+    &.active {
+      background: $accent-100;
+      color: $gray-900;
+    }
+  }
+}
+
+.pc-img-list {
+  gap: 4px;
+  li {
+    img {
+      border-radius: 4px;
+    }
+  }
+  li:first-child {
+    img {
+      border-radius: 20px 0 0 20px;
+    }
+  }
+  li:last-child {
+    img {
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoachMoments</title>
+    <%- include('./layout/favicon'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+      <section class="banner-article mb-9 mb-md-17">
+        <div class="container">
+          <div class="pc-banner rounded-1"></div>
+        </div>
+      </section>
+
+
+      <!-- 文章 -->
+      <section class="further-reading pb-12 pb-md-18">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2 class="fs-4 fs-md-2 mb-4 mb-md-9">所有文章</h2>
+            </div>
+          </div>
+          <!-- 平板以上無 swiper -->
+          <div class="d-none d-sm-block">
+            <div class="row justify-content-center">
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/images/read-1.png"
+                        class="w-100 object-fit-cover"
+                        alt="週末說走就走露營記"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">週末說走就走露營記</h3>
+                        <p class="text-gray-400 mb-2">
+                          遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/images/read-2.png"
+                        class="w-100 object-fit-cover"
+                        alt="城市野營日記"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">城市野營日記</h3>
+                        <p class="text-gray-400 mb-2">
+                          終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/images/read-3.png"
+                        class="w-100 object-fit-cover"
+                        alt="和寵物去露營"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">
+                          和寵物去露營 - 大自然之旅的雙倍體驗
+                        </h3>
+                        <p class="text-gray-400 mb-2">
+                          說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 手機板有 swiper -->
+          <div class="d-block d-sm-none">
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="swiper furtherReading">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/images/read-1-sm.png"
+                              class="w-100 object-fit-cover"
+                              alt="週末說走就走露營記"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">週末說走就走露營記</h3>
+                              <p class="text-gray-400 mb-2">
+                                遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/images/read-2-sm.png"
+                              class="w-100 object-fit-cover"
+                              alt="城市野營日記"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">城市野營日記</h3>
+                              <p class="text-gray-400 mb-2">
+                                終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/images/read-3-sm.png"
+                              class="w-100 object-fit-cover"
+                              alt="和寵物去露營"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">
+                                和寵物去露營 - 大自然之旅的雙倍體驗
+                              </h3>
+                              <p class="text-gray-400 mb-2">
+                                說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.banner-about {
+  @include media-breakpoint-down(sm) {
+    background-image: url('../images/about-banner-sm.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 240px;
+  }
+  .pc-banner {
+    @include media-breakpoint-up(sm) {
+      background-image: url('../images/about-banner.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 454px;
+    }
+  }
+}
+
+.aboutus {
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+}
+
+.year {
+  time {
+    @include media-breakpoint-up(md) {
+      margin-left: -12px;
+    }
+  }
+}
+
+.time-sequence {
+  time {
+    width: 16%;
+    @include media-breakpoint-up(sm) {
+      width: 10%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 15%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 12%;
+    }
+  }
+}

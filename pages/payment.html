@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoachMoments</title>
+    <%- include('./layout/favicon'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="payment">
+      <div class="container pb-12 pt-3 pt-sm-7 pt-md-14 pb-md-19 border-top-md">
+        <div class="row mb-9 mb-md-10">
+          <nav class="mb-1 mb-md-3">
+            <ol class="breadcrumb mb-0 py-2">
+              <li class="breadcrumb-item fs-md-6">
+                <a href="#" class="link-gray-400">首頁</a>
+              </li>
+              <li class="breadcrumb-item fs-md-6">
+                <a href="#" class="link-gray-400">訂閱方案</a>
+              </li>
+              <li class="breadcrumb-item fs-md-6 active">付款</li>
+            </ol>
+          </nav>
+          <h2 class="fs-3 fs-md-1">付款</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-7">
+            <form
+              action=""
+              class="border border-primary-300 rounded-3 p-5 p-lg-9 bg-white needs-validation mb-5"
+              novalidate
+            >
+              <h2 class="text-dark fs-md-4 fs-5 mb-5 mb-md-9">購買人</h2>
+              <div class="mb-3">
+                <label for="account" class="form-label fw-bold mb-2"
+                  >姓名</label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-2"
+                  id="account"
+                  placeholder="請輸入姓名"
+                  required
+                />
+                <div class="invalid-feedback">請輸入姓名</div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label fw-bold mb-2"
+                  >密碼</label
+                >
+                <input
+                  type="password"
+                  class="form-control rounded-2"
+                  id="password"
+                  placeholder="請輸入密碼"
+                  required
+                />
+                <div class="invalid-feedback">請輸入密碼</div>
+              </div>
+              <div class="mb-5">
+                <label for="email" class="form-label fw-bold mb-2"
+                  >電子信箱</label
+                >
+                <input
+                  type="email"
+                  class="form-control rounded-2"
+                  id="email"
+                  placeholder="請輸入電子信箱"
+                  required
+                />
+                <div class="invalid-feedback">請輸入電子信箱</div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="agree"
+                  id="rememberPersonalInfo"
+                />
+                <label
+                  class="form-check-label text-gray-500"
+                  for="rememberPersonalInfo"
+                >
+                  記住我的資訊
+                </label>
+              </div>
+            </form>
+
+            <form
+              action=""
+              class="border border-primary-300 rounded-3 p-5 p-lg-9 bg-white needs-validation mb-5"
+              novalidate
+            >
+              <h2 class="text-dark fs-md-4 fs-5 mb-5 mb-md-9">付款方式</h2>
+              <h3 class="fs-6 mb-3">Pay With</h3>
+              <div class="form-check mb-5 mb-md-9">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="credit-card"
+                  value="creditCard"
+                  checked
+                />
+                <label class="form-check-label text-gray-500" for="credit-card">
+                  信用卡
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="card-number" class="form-label fw-bold mb-2"
+                  >信用卡號碼</label
+                >
+                <input
+                  type="number"
+                  class="form-control rounded-2"
+                  id="card-number"
+                  placeholder="1234 5678 1234 5678"
+                  required
+                />
+                <div class="invalid-feedback">請輸入信用卡號碼</div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-6">
+                  <label for="expiry-date" class="form-label mb-2"
+                    >過期日</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="expiry-date"
+                    placeholder="ＭＭ/YY"
+                    required
+                  />
+                  <div class="invalid-feedback">請輸入過期日</div>
+                </div>
+                <div class="col-6">
+                  <label for="authorize" class="form-label mb-2">認證碼</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="authorize"
+                    placeholder="CVV"
+                    required
+                  />
+                  <div class="invalid-feedback">請輸入認證碼</div>
+                </div>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="agree"
+                  id="rememberCardInfo"
+                />
+                <label
+                  class="form-check-label text-gray-500"
+                  for="rememberCardInfo"
+                >
+                  記住卡片資訊
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <form
+              action=""
+              class="border border-accent-200 rounded-3 p-5 p-lg-9 bg-white"
+            >
+              <h2 class="text-accent-200 fs-md-4 fs-5 mb-5 mb-md-9">
+                訂單資訊
+              </h2>
+              <div class="py-5 border-top border-bottom">
+                <div class="d-flex justify-content-between mb-2">
+                  <h3 class="text-dark fs-md-5 fs-6">輕量型方案</h3>
+                  <p class="fw-bold text-dark fs-md-5 fs-6 font-news-reader">
+                    NT 1,188
+                  </p>
+                </div>
+                <span class="text-gray-300">年繳</span>
+              </div>
+              <div class="row py-5 py-md-9 border-bottom align-items-end">
+                <div class="col-9">
+                  <label for="coupon" class="form-label mb-2">折扣碼</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="coupon"
+                    placeholder="請輸入折扣碼"
+                  />
+                </div>
+                <div class="col-3 ps-0">
+                  <button
+                    type="button"
+                    class="btn btn-gray-100 btn-discount text-nowrap w-100 px-3"
+                  >
+                    套用
+                  </button>
+                </div>
+              </div>
+              <div class="py-5 border-bottom">
+                <div class="d-flex justify-content-between mb-2">
+                  <p class="text-gray-500 fw-bold">小計</p>
+                  <p class="text-gray-500 fw-bold font-news-reader">NT 1,188</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="text-gray-500 fw-bold">折扣</p>
+                  <p class="text-gray-500 fw-bold">0</p>
+                </div>
+              </div>
+              <div class="my-5 my-md-9">
+                <div class="d-flex justify-content-between">
+                  <p class="text-gray-500 fw-bold">總計</p>
+                  <p class="text-dark fw-bold fs-4 fs-md-3 font-news-reader">
+                    NT 1,188
+                  </p>
+                </div>
+              </div>
+              <a
+                href="success-pay.html"
+                class="btn btn-accent-200 btn-primary-status link-light fw-md-bolder fs-md-5 py-md-3 px-md-5 w-100"
+              >
+                立即付款
+                <i class="bi bi-arrow-right ms-2 fs-md-4 fs-5"></i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

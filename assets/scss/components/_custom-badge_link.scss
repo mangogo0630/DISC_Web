@@ -1,0 +1,8 @@
+.badge-primary-link {
+  color: $primary-400;
+  background: $primary-300;
+  &:hover {
+    color: $white;
+    background: $primary-400;
+  }
+}

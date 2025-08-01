@@ -1,0 +1,64 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    // Make an existing utility responsive
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      ( responsive: true ),
+    ),
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      ( responsive: true ),
+    ),
+    "border": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+    "border-bottom": map-merge(
+      map-get($utilities, "border-bottom"),
+      ( responsive: true ),
+    ),
+    "border-top": map-merge(
+      map-get($utilities, "border-top"),
+      ( responsive: true ),
+    ),
+    "border-width": map-merge(
+      map-get($utilities, "border-width"),
+      ( responsive: true ),
+    ),
+    "rounded-top-left": (
+      property: border-top-left-radius,
+      class: rounded-top-left,
+      responsive: true,
+      values: (
+        1:$border-radius-sm,
+        2:$border-radius,
+        3:$border-radius-lg,
+        4:$border-radius-xl
+      ),
+    ),
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-right,
+      responsive: true,
+      values: (
+        1:$border-radius-sm,
+        2:$border-radius,
+        3:$border-radius-lg,
+        4:$border-radius-xl
+      ),
+    ),
+    "color": map-merge(
+      map-get($utilities, "color"),
+      ( responsive: true ),
+    ),
+  )
+);

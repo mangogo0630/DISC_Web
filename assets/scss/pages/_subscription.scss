@@ -1,0 +1,61 @@
+.subscription {
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+
+  .nav-pills {
+    .nav-link {
+      &.active {
+        background: $accent-200;
+        color: $white;
+      }
+    }
+  }
+
+  .card {
+    border: 2px solid $primary-300;
+    color: $neutral-400;
+    &:hover {
+      color: $neutral-500;
+      border: 2px solid $accent-200;
+      h4 {
+        color: $primary-400;
+      }
+      h3 {
+        color: $gray-300;
+        strong {
+          color: $accent-200;
+        }
+      }
+    }
+  }
+
+  .btn-subscription-custom {
+    background: $gray-100;
+    color: $neutral-400;
+    &:hover {
+      background: $accent-200;
+      color: $white;
+    }
+  }
+}
+
+.discount-line {
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: $gray-300;
+  }
+}

@@ -1,0 +1,9 @@
+.success {
+  h2 {
+    i {
+      @include media-breakpoint-up(md) {
+        font-size: 48px !important;
+      }
+    }
+  }
+}
