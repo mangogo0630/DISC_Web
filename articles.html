@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoachMoments</title>
+    <link rel="shortcut icon" href="../assets/logo-favicon-2d878f39.ico" type="image/x-icon">    <script type="module" crossorigin src="../assets/main-8cb59440.js"></script>
+    <link rel="stylesheet" href="../assets/main-c187e648.css">
+  </head>
+  <body>
+    <header class="header bg-primary-100 sticky-top">
+  <nav class="navbar navbar-expand-md">
+    <div
+      class="container justify-content-between align-items-center py-lg-4 py-4"
+    >
+      <div
+        class="search-area d-flex justify-content-between align-items-center"
+      >
+        <h1 class="me-md-2 me-xl-8">
+          <a href="index.html" class="logo d-block">教練</a>
+        </h1>
+        <!-- pc 搜尋欄-->
+        <form
+          class="align-items-center border rounded-pill bg-white d-none d-md-flex"
+          role="search"
+        >
+          <span
+            class="fs-md-7 fs-lg-6 text-nowrap ps-md-2 ps-xl-4 text-gray-300"
+            >搜尋文章</span
+          >
+          <input
+            class="form-control py-md-1 py-lg-2 px-md-2 px-xl-4 bg-white border-0"
+            type="search"
+            id="search"
+            aria-label="Search"
+          />
+          <label for="search" class="d-flex align-items-center">
+            <a href="#">
+              <i
+                class="bi bi-search fs-md-6 fs-xl-4 text-accent-200 ps-1 pe-md-2 pe-xl-4"
+              ></i>
+            </a>
+          </label>
+        </form>
+      </div>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="hamburg-line"></span>
+        <span class="hamburg-line"></span>
+        <span class="hamburg-line"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse px-6 px-sm-15 px-md-0"
+        id="navbarContent"
+      >
+        <!-- pad mobil 搜尋欄 -->
+
+        <form
+          class="align-items-center border rounded-pill bg-white d-md-none d-flex w-100 mb-5"
+          role="search"
+        >
+          <span class="fs-6 text-nowrap px-4 text-gray-300">搜尋文章</span>
+          <input
+            class="form-control bg-white border-0"
+            type="search"
+            id="search"
+            aria-label="Search"
+          />
+          <label for="search" class="d-flex align-items-center">
+            <a href="#">
+              <i class="bi bi-search fs-4 text-accent-200 px-2"></i>
+            </a>
+          </label>
+        </form>
+        <ul class="navbar-nav ms-auto mb-lg-0">
+          <li class="nav-item me-xl-4 mb-5 mb-md-0">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              aria-current="page"
+              href="articles.html"
+              >所有文章</a
+            >
+          </li>
+          <li class="nav-item me-xl-4 mb-5 mb-md-0">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              href="subscription.html"
+              >服務項目</a
+            >
+          </li>
+          <li class="nav-item me-xl-4 mb-5 mb-md-0">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              href="https://coachmoments.github.io/DISC/"
+              target="_blank"
+              >DISC測驗</a
+            >
+          </li>
+          <li class="nav-item me-xl-4 me-md-2">
+            <a
+              class="nav-link link-primary-status py-md-1 py-2 px-md-2 px-lg-4 link-gray-500 fw-bold fs-md-7 fs-lg-6"
+              href="aboutus.html"
+              >關於我們</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    <main>
+      <section class="banner-article mb-9 mb-md-17">
+        <div class="container">
+          <div class="pc-banner rounded-1"></div>
+        </div>
+      </section>
+
+
+      <!-- 文章 -->
+      <section class="further-reading pb-12 pb-md-18">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2 class="fs-4 fs-md-2 mb-4 mb-md-9">所有文章</h2>
+            </div>
+          </div>
+          <!-- 平板以上無 swiper -->
+          <div class="d-none d-sm-block">
+            <div class="row justify-content-center">
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/read-1-7447f302.png"
+                        class="w-100 object-fit-cover"
+                        alt="週末說走就走露營記"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">週末說走就走露營記</h3>
+                        <p class="text-gray-400 mb-2">
+                          遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/read-2-9172e3e2.png"
+                        class="w-100 object-fit-cover"
+                        alt="城市野營日記"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">城市野營日記</h3>
+                        <p class="text-gray-400 mb-2">
+                          終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 mb-sm-9">
+                <div class="card-further pb-5 border-bottom">
+                  <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                      <img
+                        src="../assets/read-3-84996d96.png"
+                        class="w-100 object-fit-cover"
+                        alt="和寵物去露營"
+                      />
+                    </div>
+                    <div class="col-sm-8 col-lg-9">
+                      <div class="card-further-body">
+                        <h3 class="fs-5 mb-1">
+                          和寵物去露營 - 大自然之旅的雙倍體驗
+                        </h3>
+                        <p class="text-gray-400 mb-2">
+                          說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                        </p>
+                        <div class="text-end">
+                          <a
+                            href="#"
+                            class="d-block link-accent-200 fw-bold fs-5 py-1"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 手機板有 swiper -->
+          <div class="d-block d-sm-none">
+            <div class="row justify-content-center">
+              <div class="col">
+                <div class="swiper furtherReading">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/read-1-sm-01407a34.png"
+                              class="w-100 object-fit-cover"
+                              alt="週末說走就走露營記"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">週末說走就走露營記</h3>
+                              <p class="text-gray-400 mb-2">
+                                遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/read-2-sm-24c5fd2f.png"
+                              class="w-100 object-fit-cover"
+                              alt="城市野營日記"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">城市野營日記</h3>
+                              <p class="text-gray-400 mb-2">
+                                終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="card-further pb-5 border-bottom">
+                        <div class="row">
+                          <div class="col-12 mb-3">
+                            <img
+                              src="../assets/read-3-sm-0df9b892.png"
+                              class="w-100 object-fit-cover"
+                              alt="和寵物去露營"
+                            />
+                          </div>
+                          <div class="col-12">
+                            <div class="card-further-body">
+                              <h3 class="fs-5 mb-1">
+                                和寵物去露營 - 大自然之旅的雙倍體驗
+                              </h3>
+                              <p class="text-gray-400 mb-2">
+                                說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                              </p>
+                              <div class="text-end">
+                                <a
+                                  href="#"
+                                  class="d-block link-accent-200 fw-bold fs-5 py-1"
+                                  >Read More</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container py-md-5 py-4 border-top border-gray-300">
+    <p class="text-center text-primary-400 fs-md-6 font-news-reader">
+      © CoachMoments DISC人格測驗. 保留所有權利。
+    </p>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
